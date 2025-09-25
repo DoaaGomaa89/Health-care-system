@@ -60,7 +60,7 @@ public class DepartmentImpl implements DepartmentService{
 
 	@Override
 	public DepartmentDTO getById(long deptid) throws Exception {
-		return convertModelToDTO(dRepo.getById(deptid));
+		return convertModelToDTO(dRepo.findById(deptid).orElseThrow(null));
 	}
 
 	@Override
