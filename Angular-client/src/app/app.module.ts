@@ -71,6 +71,7 @@ import { BillPipe } from './filter/bill/bill.pipe';
 import { TestPipe } from './filter/test/test.pipe';
 import { WardPipe } from './filter/Ward/ward.pipe';
 import { SpecializationPipe } from './filter/specialization/specialization.pipe';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -92,7 +93,7 @@ import { SpecializationPipe } from './filter/specialization/specialization.pipe'
     InvoiceComponent,
     // pipes
     DepartmentPipe, DoctorPipe, EmployeePipe, InsurancePipe, MedicosPipe,
-    OperationPipe, PatientPipe, BillPipe, TestPipe, WardPipe, SpecializationPipe
+    OperationPipe, PatientPipe, BillPipe, TestPipe, WardPipe, SpecializationPipe, NavbarComponent
   ],
   imports: [
     BrowserModule,

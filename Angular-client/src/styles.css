@@ -6,3 +6,32 @@
 /* body{
     background-color: rgba(123,161,52);
 } */
+/* ---- Global layout tokens ---- */
+:root { --nav-h: 64px; }
+
+/* Reset weird default gaps that push header around */
+html, body { height: 100%; margin: 0; }
+
+/* Keep header pinned and above page content */
+.site-header {
+  position: sticky;   /* or 'fixed' if you prefer */
+  top: 0;
+  z-index: 1100;      /* above page content, below any open side menu */
+}
+
+/* Ensure pages never slide under the header */
+.site-content {
+  padding-top: var(--nav-h);
+}
+
+/* Optional: give every page a consistent max width */
+.page,
+.container,
+.form-page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Headings sometimes look like the header “moves down” due to top margins */
+h1, h2, h3 { margin-top: 0; }
