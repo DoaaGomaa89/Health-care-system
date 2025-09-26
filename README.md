@@ -2,6 +2,13 @@
 
 A modern full‑stack application for managing patients, doctors, appointments, prescriptions, and billing with a clean web UI and a secure REST API.
 
+For login as Admin: 
+user: admin
+password: admin123
+
+To register a new user: http://localhost/signup
+
+
 ---
 
 # 🚀 Quick Start (Docker — Recommended)
